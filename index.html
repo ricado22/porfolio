@@ -37,7 +37,7 @@
             </nav>
 
             <div class="btn-contato">
-                <a href="#">
+                <a href="#formulario">
                     <button>Contato</button>
                 </a>
             </div> <!-- btn-contato -->
@@ -245,14 +245,14 @@
 
         <section class="formulario" id="formulario">
             <div class="interface">
-                <h2 class="titulo">FALE <span>COMIGO<span></h2>
+                <h2 class="titulo">FALE COMIGO <span><i class="bi bi-whatsapp"></i><span></h2>
 
                 <form action="">
-                    <input type="text" name="" id="" placeholder="Seu nome:" required>
-                    <input type="text" name="" id="" placeholder="Seu e-mail:" required>
-                    <input type="text" name="" id="" placeholder="Seu celular:">
-                    <textarea name="" id="" placeholder="Sua mensagen" required></textarea>
-                    <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
+                    <input type="text" id="nome" placeholder="Seu nome:" required>
+                    <input type="text" name="" id="" placeholder="Seu e-mail:">
+                    <input type="text" id="telefone" placeholder="Seu celular:" required>
+                    <textarea id="mensagem" placeholder="Sua mensagen" required></textarea>
+                    <div class="btn-enviar"><input type="submit" value="ENVIAR" onclick="whatsapp()"></div>
 
                 </form>
             </div> <!-- interface -->

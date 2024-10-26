@@ -72,3 +72,25 @@ window.onscroll = function () {
 backToTopButton.onclick = function () {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 };
+
+
+
+function whatsapp() {
+    var name = document.getElementById('nome').value;
+    var phone = document.getElementById('telefone').value;
+    var message = document.getElementById('mensagem').value;
+
+    // Verifica se todos os campos estão preenchidos
+    if (name === '' || phone === '' || message === '') {
+        alert("Por favor, preencha todos os campos obrigatórios do formulário.");
+        return false; // Impede o envio do formulário
+    }
+
+    var url = "https://wa.me/+5511999189875?text=" 
+        + "Nome: " + name + "%0a" 
+        + "Telefone: " + phone + "%0a"
+        + "Mensagem: " + message;
+
+    window.open(url, '_blank').focus();
+    return false; // Impede o envio do formulário
+}
