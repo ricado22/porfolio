@@ -17,9 +17,6 @@ overlay.addEventListener('click', () => {
 
 
 
-
-
-
 document.addEventListener('DOMContentLoaded', function () {
     // Seleciona todos os links do menu que possuem hash (âncora)
     const menuLinks = document.querySelectorAll('a[href^="#"]');

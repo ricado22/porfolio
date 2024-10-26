@@ -473,6 +473,10 @@ footer .line-footer p a {
 
     /* classes gerais */
     .flex {
+        flex-direction: column;
+    }
+
+    .topo-do-site .flex{
         flex-direction: column-reverse;
     }
 
