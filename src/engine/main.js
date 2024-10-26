@@ -56,3 +56,19 @@ seeMoreBtn.addEventListener("click", () => {
   seeMoreBtn.style.display = "none"; // Esconde o botão "Ver mais"
 });
 
+// Seleciona o botão
+const backToTopButton = document.getElementById('backToTop');
+
+// Mostra o botão ao rolar para baixo
+window.onscroll = function () {
+    if (window.scrollY > 200) {
+        backToTopButton.style.display = "block";
+    } else {
+        backToTopButton.style.display = "none";
+    }
+};
+
+// Função de clique para voltar ao topo
+backToTopButton.onclick = function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+};

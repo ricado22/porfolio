@@ -468,6 +468,27 @@ footer .line-footer p a {
     width: 60%;
     height: auto;
 }
+/* botão voltar ao topo */
+
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none; /* Inicialmente oculto */
+    background-color: #FFBD59;
+    color: #000000;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease;
+}
+
+#backToTop:hover {
+    opacity: 0.8;
+}
 
 @media screen and (max-width: 1020px) {
 
@@ -603,3 +624,7 @@ footer .line-footer p a {
         display: none;
     }
 }
+
+
+
+
